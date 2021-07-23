@@ -2,7 +2,7 @@ library(readr)
 library(tidyverse)
 library(ggfortify)
 
-setwd("E:/mdsny/Documents/Miami/4 Senior/FA 20/STA 660/NIOSH/Data")
+setwd("C:/Users/Elitebook08112019/Documents/Fall2020/STA660/project2")
 
 ######################################################################################### Read in data
 niosh0 <- read_csv("NIOSH Data1.csv")
