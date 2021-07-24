@@ -1,11 +1,19 @@
+###########################################
+#### NIOSH ten Berge Exponent Analysis ####
+####   Takumi Kijima & Matthew Snyder  ####
+####        STA 660, FA 2020           ####
+###########################################
+
 library(readr)
 library(tidyverse)
 library(ggfortify)
-
-setwd("C:/Users/Elitebook08112019/Documents/Fall2020/STA660/project2")
-
+library(rstan)
+library(bayesplot)
+library(HDInterval)
+library(tcltk)
+library(gridExtra)
 ######################################################################################### Read in data
-niosh0 <- read_csv("NIOSH Data1.csv")
+niosh0 <- read_csv("NIOSH.csv")
 
 # Data manipulation and transformation
 niosh <- niosh0 %>% 
